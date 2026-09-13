@@ -1,0 +1,3 @@
+# Fluent Emoji 3D icons (assets/fluent/)
+Source: https://github.com/microsoft/fluentui-emoji (Microsoft). License: MIT. Attribution not required; credited on the end page anyway.
+Files: policy (Memo), food (Green salad), mother (Breast feeding, medium-dark), child (Baby, medium-dark), woman, pregnant, outcomes (Sheaf of rice), cost (Shopping cart), fies (Fork and knife with plate), income (Money bag), registry (Clipboard), fortification (Test tube), barchart, placebo (Crystal ball), trend (Chart increasing), loco (Bullseye), scale (Balance scale), who (Classical building), ministry (Hospital), analyst (Microscope), blood (Drop of blood), magnifier, puzzle, panel (Card index dividers), chain, ledger, locked.
