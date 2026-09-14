@@ -4,6 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ink and Iron — Primary Pea</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#F2EEDF">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -237,8 +241,8 @@ section > *{position:relative; z-index:1}
 .fig-row .contrast{margin-top:6px; max-width:none}
 /* figure cards (scaffold PNGs) */
 .figclip{overflow:hidden; border-radius:14px; max-height:58vh}
-.figclip img{display:block; width:100%; height:auto; clip-path:inset(0 0 7% 0); margin-bottom:-7%}
-#f2a .figclip img{clip-path:inset(0 0 9% 0); margin-bottom:-9%}
+.figclip img{display:block; width:100%; height:auto; clip-path:inset(0 0 9% 0); margin-bottom:-52px} /* 9% of a ~580 px figure: the caption band the scaffold images carry */
+#f2a 
 
 /* finding 3 strip */
 .contrast{margin-top:18px; display:grid; gap:8px; max-width:500px}
@@ -332,10 +336,10 @@ section > *{position:relative; z-index:1}
   <p class="body anim">Track: Eat.</p>
   <div class="team">
     <div class="tcard anim"><img class="av" src="assets/team/image13.png" alt=""><div class="tn">Hope Winsor</div><div class="tr">BS Data Science (statistics), Colorado State</div><div class="to">World Bank income and FIES food-insecurity data</div></div>
-    <div class="tcard anim"><img class="av" src="assets/team/image16.png" alt=""><div class="tn">Alison Nichols</div><div class="tr">MS Business Analytics, Santa Clara</div><div class="to">FAOSTAT cost-of-diet data and the country list</div></div>
+    <div class="tcard anim"><img class="av" src="assets/team/image16.png" alt=""><div class="tn">Alison Nichols</div><div class="tr">MS Business Analytics, Santa Clara</div><div class="to">UNICEF women's nutrition EDA and the concern score</div></div>
     <div class="tcard anim"><img class="av" src="assets/team/image17.png" alt=""><div class="tn">Tatiana Gabel</div><div class="tr">BS Computer Science + Data Science, Colorado State</div><div class="to">GIFNA policy feature table</div></div>
     <div class="tcard anim"><img class="av" src="assets/team/image18.png" alt=""><div class="tn">Ramya Shetty</div><div class="tr">Data engineer, Radix, Mumbai</div><div class="to">Presentation lead and timeline</div></div>
-    <div class="tcard anim"><img class="av" src="assets/team/image15.png" alt=""><div class="tn">Sarah Hossain</div><div class="tr">MEng Software Engineering, Western University</div><div class="to">Modelling pipeline and dashboard</div></div>
+    <div class="tcard anim"><img class="av" src="assets/team/image15.png" alt=""><div class="tn">Sarah Hossain</div><div class="tr">MEng Software Engineering, Western University</div><div class="to">The country panel, the models and the tests</div></div>
   </div>
 </section>
 
@@ -345,7 +349,7 @@ section > *{position:relative; z-index:1}
   <h2 class="h2 anim" style="margin-top:12px">A known remedy, a missed target.</h2>
   <p class="body anim">Anaemia in women is one of the oldest nutrition targets in global health, and one of the least met.</p>
   <div class="facts">
-    <div class="fact anim"><img class="ico lg" src="assets/fluent/blood.png" alt=""><b class="num">30%</b><span>of women aged 15 to 49 worldwide were anaemic in 2019. In Mali, Benin, Nigeria, Gabon and Côte d'Ivoire, more than half.</span></div>
+    <div class="fact anim"><img class="ico lg" src="assets/fluent/blood.png" alt=""><b class="num">30%</b><span>of women aged 15 to 49 worldwide were anaemic in 2019. In 2023, more than half in Gabon, Mali, Mauritania, Côte d'Ivoire and Benin.</span></div>
     <div class="fact anim"><img class="ico lg" src="assets/fluent/who.png" alt=""><b class="num">2012 → 2030</b><span>The World Health Assembly set out to halve anaemia in women by 2025, then moved the date to 2030. No sub-Saharan country is on track.</span></div>
     <div class="fact anim"><img class="ico lg" src="assets/fluent/ministry.png" alt=""><b class="num">Under 15%</b><span>Preconception iron and folic acid uptake in several sub-Saharan countries. The remedy is known and cheap. The gap is delivery.</span></div>
   </div>
@@ -381,7 +385,7 @@ section > *{position:relative; z-index:1}
   <div class="illo" style="width:min(20vw,290px); right:6vw; top:10vh"><svg id="a0ea4cd9-8cf5-4233-b316-8ec17456f4b6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 668.40475 538.45004"><path d="M982.49026,231.66176v420.06c18.97217,30.71973-3.22778,28.69977-33.67779,21.20972a757.69423,757.69423,0,0,0-215.45-21.27q-13.11.585-26.18,1.64-6.15.49492-12.3,1.09-23.475,2.295-46.83,6.06-4.395.705-8.77,1.48c-2.73.47-5.45.96-8.18,1.47q-22.245,4.125-44.29,9.62c-.02.01-.05.01-.07.02l-73.9,18.46-155.73,38.89c-32.69,0-59.19-26.5-4.48612-62.91211v-420.06c-54.70389-28.97794-28.20389-55.47794,4.48612-55.47794L586.8743,256.35822A535.74969,535.74969,0,0,0,871.002,257.76581C934.72854,240.57968,991.9714,225.05507,982.49026,231.66176Z" transform="translate(-321.11377 -191.94144)" fill="#EBE5D2"/><path d="M602.04959,279.16379c7.8681-25.07526,25.76031-48.07338,50.50488-56.55017,24.746-8.47681,60.98047,4.43613,79.584,22.97667,34.02935,33.91435,35.0766,75.4315,11.697,112.24937-4.65027-.24615-20.6966-.42822-25.4032-.60449L711.7742,335.0441v21.97235c-36.73651-1.13531-77.62579,29.08118-113.24939.31067C595.09494,331.25962,594.18155,304.23905,602.04959,279.16379Z" transform="translate(-321.11377 -191.94144)" fill="#2f2e41"/><polygon points="381.55 343.539 389.142 363.278 387.624 383.018 241.852 364.797 246.407 348.094 263.11 328.354 381.55 343.539" fill="#ffb6b6"/><circle cx="334.5686" cy="112.82948" r="53.07025" fill="#ffb7b7"/><path d="M599.4086,395.7822l30.36908-18.22147,60.73816-6.07382,53.684,12.14771-.538,98.69952-34.05664,86.61465L566.87045,550.72736l-5.42316-30.55145s-39.47979-53.02634,3.03693-83.39542Z" transform="translate(-321.11377 -191.94144)" fill="#C0392B"/><path d="M733.36239,651.6615q-13.11.58494-26.18,1.64-6.15.495-12.3,1.09-23.475,2.295-46.83,6.06-4.395.705-8.77,1.48c-2.73.47-5.45.96-8.18,1.47q-22.245,4.125-44.29,9.62c-.02.01-.05.01-.07.02l-73.9,18.46c4.27-38.5,14.33-97.91,36.46-111.99l14.46-25.72.01-.02.89-1.57,26.78,2.79,22.52,2.35,15.54,1.62,9.71,1,.15.02,69.96,7.29.9.1h.03v33.72s.46.59,1.24,1.7c.32.44.68.96,1.08,1.55a148.0187,148.0187,0,0,1,8.52,14.06c.42.78.84,1.58,1.25,2.41a131.54453,131.54453,0,0,1,7.13,16.52A98.62807,98.62807,0,0,1,733.36239,651.6615Z" transform="translate(-321.11377 -191.94144)" fill="#2f2e41"/><path d="M619.21676,235.66411c20.27228-12.35893,47.29-12.71519,67.88263-.89491,20.59107,11.82028,33.9087,35.33057,33.46088,59.06958-29.66473,1.36423-60.43536,29.2243-92.42548,1.78073l-7.46771-18.2767L616.26443,295.633q-14.44234-.00143-28.93957-.038C586.24966,271.87622,598.943,248.02306,619.21676,235.66411Z" transform="translate(-321.11377 -191.94144)" fill="#2f2e41"/><path d="M746.8724,576.49707l51.62745,30.36908c12.14764-6.07379,9.79931-45.46393,2.382-47.771l-5.59259-131.42527c-3.03692-60.73816-51.08953-44.03518-51.08953-44.03518L722.40347,388.19,737.588,451.96509l16.49408,110.03864A18.1729,18.1729,0,0,0,746.8724,576.49707Z" transform="translate(-321.11377 -191.94144)" fill="#C0392B"/><path d="M727.82242,609.06147l-4.33,9.27-1.15,2.48-12.15,26.03-3.01,6.46q-6.15015.495-12.3,1.09-23.47494,2.295-46.83,6.06l4.52-18.66-13.29,20.14c-2.73.47-5.45.96-8.18,1.47q-22.245,4.125-44.29,9.62l40.27-93.31v-.01l3.46-8.02,80.95,31.11005,2.14.81994Z" transform="translate(-321.11377 -191.94144)" fill="#3f3d56"/><path d="M624.26108,576.21961c26.07959,33.50921,62.64233,44.80011,105.96673,41.7597l61.68927-190.25726-29.09065-5.13815-12.42351-16.18821-32.476-4.26209-16.0886,7.83856-26.9006-.59752-20.46695,67.38428-37.71463,66.95414Z" transform="translate(-321.11377 -191.94144)" fill="#DDD6C1"/><path d="M828.74905,418.65406l-12.97583,11.27368-26.77484-30.8176-8.08105-3.33908a11.13767,11.13767,0,0,1-4.245-17.49271h0a11.13741,11.13741,0,0,1,16.90588-.10559l8.396,9.6637Z" transform="translate(-321.11377 -191.94144)" fill="#ffb8b8"/><path d="M758.90472,494.77552l49.514-41.474,20.12065-18.23841a14.07816,14.07816,0,0,0,.20968-20.66739l0,0-.34415-6.21019a11.57519,11.57519,0,0,0-13.71974-10.731l0,0-17.2235,16.94114,9.56606,5.46606-11.004,6.62676-28.216,1.598Z" transform="translate(-321.11377 -191.94144)" fill="#DDD6C1"/><circle cx="424.487" cy="170.88232" r="39.74988" fill="#ffb8b8"/><path d="M775.67843,316.21781c24.46485,9.11181,39.18952,22.14111,30.07764,46.60592s-33.99646,48.8725-58.4613,39.76068-8.583-17.8449-35.52057-67.54034C699.33328,312.0925,751.21359,307.106,775.67843,316.21781Z" transform="translate(-321.11377 -191.94144)" fill="#2f2e41"/><path d="M795.06241,604.84149c-.2.13-.41.26-.62.38q-.615.375-1.26.69l-63.71,31.42-19.28,9.51-15.31,7.55q-23.47494,2.295-46.83,6.06-4.39509.705-8.77,1.48c-2.73.47-5.45.96-8.18,1.47a22.64347,22.64347,0,0,1-.08-5.4,23.82461,23.82461,0,0,1,28.75-20.9,23.39,23.39,0,0,1,3.59,1.11l31.07-21.39,18.14-12.48,1.06-.73,27.36-18.84.01-.01,8.6-5.91.58-.4,5.83-4.01-2.12-27.24,40.69-8.57,8.44,47.86A18.14069,18.14069,0,0,1,795.06241,604.84149Z" transform="translate(-321.11377 -191.94144)" fill="#ffb6b6"/><path d="M799.61032,559.095l-2.569-38.7995-43.1488,26.904-1.082,14.80414a18.17273,18.17273,0,0,0-7.20972,14.49328l51.62744,30.36914C809.37588,600.7923,807.02756,561.40222,799.61032,559.095Z" transform="translate(-321.11377 -191.94144)" fill="#C0392B"/><path d="M544.05179,378.80826a13.68483,13.68483,0,0,0,17.98352,10.81323l110.02685,58.5644,9.33808-28.25748L570.31113,371.247a13.759,13.759,0,0,0-26.25934,7.56131Z" transform="translate(-321.11377 -191.94144)" fill="#ffb6b6"/><path d="M716.53934,463.04258s-20.60761,13.45867-34.39728,6.79126c-11.03968-5.3378-44.25965-33.93921-57.07923-45.14225a10.75066,10.75066,0,0,1-13.17083-.4917l20.16186-29.0794c7.94892-1.04462,9.08258,4.18716,9.01563,7.33535L661.567,410.845l17.37217-.29476,38.98776,47.45333Z" transform="translate(-321.11377 -191.94144)" fill="#DDD6C1"/><path d="M713.60477,582.33112a23.18264,23.18264,0,0,1-35.42066,3.0022l-144.21887,4.6632-18.43991.59626h0c-18.96735.61328-29.89282-21.331-17.97144-36.09638L510.363,538.63153l45.81424,7.18573,16.56586.726,106.58869,4.671a23.30815,23.30815,0,0,1,34.27294,31.117Z" transform="translate(-321.11377 -191.94144)" fill="#ffb6b6"/><path d="M586.38913,402.58441s-27.49085-6.97525-40.521,15.46311c-10.43158,17.96362-45.91672,85.90366-53.283,113.78781-35.94223,86.61871,47.62448,52.125,45.28635,60.29578l27.9574-45.89087c12.14764-6.07379-11.23529,1.7652-14.31556-2.59l21.43085-23.29205,24.29529-12.14765,8.91449-95.10583Z" transform="translate(-321.11377 -191.94144)" fill="#C0392B"/></svg></div>
   <div class="label anim">Our question</div>
   <h2 class="h2 anim" style="margin-top:12px">Does a country's policy record predict its maternal anaemia rate?</h2>
-  <p class="body anim">Sub-Saharan Africa, 2000 to 2023. Hold income and shared shocks fixed, then ask two things: do nutrition-policy commitments go with better maternal outcomes, and which countries beat what their income predicts?</p>
+  <p class="body anim">Sub-Saharan Africa, 2000 to 2023. Hold income and shared shocks fixed, then ask three things: where anaemia is high and which way it is moving, whether a country's policy record moves with its anaemia, and who beats what their context predicts.</p>
   <svg class="chainsvg anim" viewBox="0 0 1140 290" role="img" aria-label="Policy, food and nutrition, mother, child">
     <defs>
       <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="rgba(42,36,27,.32)"/></marker>
@@ -407,9 +411,9 @@ section > *{position:relative; z-index:1}
     <text class="nt" x="1010" y="226">Child</text><text class="ns" x="1010" y="250">birthweight, stunting, mortality</text>
   </svg>
   <div class="qs">
-    <div class="q anim"><div class="qn">Question 1</div><p>Where is anaemia, and is it income?</p></div>
-    <div class="q anim"><div class="qn">Question 2</div><p>Does the policy record predict it?</p></div>
-    <div class="q anim"><div class="qn">Question 3</div><p>Who beats the odds?</p></div>
+    <div class="q anim"><div class="qn">Question 1</div><p>Where is anaemia high, and which way is it moving?</p></div>
+    <div class="q anim"><div class="qn">Question 2</div><p>Does the policy record move with it?</p></div>
+    <div class="q anim"><div class="qn">Question 3</div><p>Who beats their context?</p></div>
   </div>
 </section>
 
@@ -418,11 +422,11 @@ section > *{position:relative; z-index:1}
   <div class="viz-page">
     <div>
       <div class="label anim">Data</div>
-      <h2 class="h2 anim" style="margin-top:12px">Eight sources, four organisations.</h2>
+      <h2 class="h2 anim" style="margin-top:12px">A dozen datasets, eight organisations.</h2>
       <p class="body anim">Each dataset was pulled once, from one release, and keyed to a country code. Names are never keys. Nothing is imputed.</p>
-      <p class="foot anim">Releases: FAOSTAT July 2026, CAHD 7S2026, UN IGME 2025, UNICEF August 2025. Two releases of one series never share an axis.</p>
+      <p class="foot anim">Releases: FAOSTAT July 2026, CAHD 7S2026, UN IGME 2025, UNICEF August 2025, World Bank WDI and DHS API pulls of September 2026, WHO PCT databank November 2025, Nunn &amp; Puga 2012. Two releases of one series never share an axis.</p>
     </div>
-    <div class="srcgrid"><div class="srccard anim" style="--i:0"><img class="ico" src="assets/fluent/woman.png" alt=""><div><b>UNICEF · Women's nutrition</b><span>Anaemia, underweight and overweight in women</span></div></div><div class="srccard anim" style="--i:1"><img class="ico" src="assets/fluent/outcomes.png" alt=""><div><b>FAOSTAT · Food security</b><span>Anaemia, low birthweight, child growth</span></div></div><div class="srccard anim" style="--i:2"><img class="ico" src="assets/fluent/cost.png" alt=""><div><b>FAOSTAT · Cost of a healthy diet</b><span>Cost and unaffordability, 2017 onward</span></div></div><div class="srccard anim" style="--i:3"><img class="ico" src="assets/fluent/fies.png" alt=""><div><b>FAOSTAT · FIES</b><span>Food insecurity in 3-year windows</span></div></div><div class="srccard anim" style="--i:4"><img class="ico" src="assets/fluent/child.png" alt=""><div><b>UN IGME · Child mortality</b><span>Neonatal, infant and under-5</span></div></div><div class="srccard anim" style="--i:5"><img class="ico" src="assets/fluent/income.png" alt=""><div><b>World Bank · GDP per capita</b><span>Income in current US dollars</span></div></div><div class="srccard anim" style="--i:6"><img class="ico" src="assets/fluent/registry.png" alt=""><div><b>WHO GIFNA · Policy registry</b><span>76 policy, programme and mechanism columns</span></div></div><div class="srccard anim" style="--i:7"><img class="ico" src="assets/fluent/fortification.png" alt=""><div><b>GFDx · Fortification laws</b><span>Mandates and the year they passed</span></div></div></div>
+    <div class="srcgrid"><div class="srccard anim" style="--i:0"><img class="ico" src="assets/fluent/woman.png" alt=""><div><b>UNICEF · Women's nutrition</b><span>Anaemia, underweight and overweight in women</span></div></div><div class="srccard anim" style="--i:1"><img class="ico" src="assets/fluent/outcomes.png" alt=""><div><b>FAOSTAT · Food security</b><span>Anaemia, low birthweight, child growth</span></div></div><div class="srccard anim" style="--i:2"><img class="ico" src="assets/fluent/cost.png" alt=""><div><b>FAOSTAT · Cost of a healthy diet</b><span>Cost and unaffordability, 2017 onward</span></div></div><div class="srccard anim" style="--i:3"><img class="ico" src="assets/fluent/fies.png" alt=""><div><b>FAOSTAT · FIES</b><span>Food insecurity in 3-year windows</span></div></div><div class="srccard anim" style="--i:4"><img class="ico" src="assets/fluent/child.png" alt=""><div><b>UN IGME · Child mortality</b><span>Neonatal, infant and under-5</span></div></div><div class="srccard anim" style="--i:5"><img class="ico" src="assets/fluent/income.png" alt=""><div><b>World Bank · Income and context</b><span>GDP per capita in constant 2015 US$; malaria, fertility, urbanisation, sanitation</span></div></div><div class="srccard anim" style="--i:6"><img class="ico" src="assets/fluent/registry.png" alt=""><div><b>WHO GIFNA · Policy registry</b><span>Three registry files read directly; dated policies are the dose</span></div></div><div class="srccard anim" style="--i:7"><img class="ico" src="assets/fluent/fortification.png" alt=""><div><b>GFDx · Fortification laws</b><span>Mandates and the year they passed</span></div></div><div class="srccard anim" style="--i:8"><img class="ico" src="assets/fluent/magnifier.png" alt=""><div><b>DHS · Survey rounds</b><span>The years a haemoglobin survey anchors the estimate</span></div></div><div class="srccard anim" style="--i:9"><img class="ico" src="assets/fluent/ledger.png" alt=""><div><b>WHO PCT databank · Deworming</b><span>Delivered treatment coverage, school-age children</span></div></div></div>
   </div>
 </section>
 
@@ -432,23 +436,25 @@ section > *{position:relative; z-index:1}
     <div>
       <div class="label anim">Data</div>
       <h2 class="h2 anim" style="margin-top:12px">One table everyone reads.</h2>
-      <p class="body anim">One guarded script joins the eight sources. It refuses duplicate keys, undeclared gaps and an incomplete grid. One command rebuilds it; the R replica matches Python to the sixth decimal.</p>
+      <p class="body anim">One guarded script joins the sources. It refuses duplicate keys, undeclared gaps and an incomplete grid. One command rebuilds it; a Colab notebook re-fits the headline model to the same number; 24 automated tests check every build.</p>
       <div class="panel-stat">
         <div class="pstat anim"><div class="pv num" data-count="49">0</div><div class="pl">Countries</div></div>
         <div class="pstat anim"><div class="pv num" data-count="26">0</div><div class="pl">Years</div></div>
-        <div class="pstat anim"><div class="pv num" data-count="103">0</div><div class="pl">Columns</div></div>
+        <div class="pstat anim"><div class="pv num" data-count="174">0</div><div class="pl">Columns</div></div>
       </div>
       <div class="anatomy anim" id="anatomy">
         <div class="blk"><span class="bn">Outcomes<small>13</small></span><span class="bar"><i data-w="80"></i></span><span class="bp">80%</span></div>
-        <div class="blk"><span class="bn">Income<small>1</small></span><span class="bar"><i data-w="98"></i></span><span class="bp">98%</span></div>
-        <div class="blk"><span class="bn">Diet cost<small>3</small></span><span class="bar"><i data-w="32"></i></span><span class="bp">32%</span></div>
+        <div class="blk"><span class="bn">Income<small>1</small></span><span class="bar"><i data-w="96"></i></span><span class="bp">96%</span></div>
+        <div class="blk"><span class="bn">Diet cost<small>2</small></span><span class="bar"><i data-w="32"></i></span><span class="bp">32%</span></div>
         <div class="blk"><span class="bn">Food insecurity<small>6</small></span><span class="bar"><i data-w="25"></i></span><span class="bp">25%</span></div>
-        <div class="blk"><span class="bn">Policy (GIFNA)<small>76</small></span><span class="bar"><i data-w="92"></i></span><span class="bp">92%</span></div>
+        <div class="blk"><span class="bn">Policy registry<small>60</small></span><span class="bar"><i data-w="100"></i></span><span class="bp">100%</span></div>
+        <div class="blk"><span class="bn">Policy table<small>76</small></span><span class="bar"><i data-w="92"></i></span><span class="bp">92%</span></div>
+        <div class="blk"><span class="bn">Context<small>12</small></span><span class="bar"><i data-w="90"></i></span><span class="bp">90%</span></div>
       </div>
       <p class="foot anim"><b>Share of cells filled.</b> Diet cost and food insecurity begin in 2017 and 2014, so they are sparse by design.</p>
     </div>
     <div class="chart anim">
-      <div class="ct">From eight sources to one panel</div>
+      <div class="ct">From a dozen datasets to one panel</div>
       <div class="cs">Each source is read once, keyed to a code, and passed through one guarded assembly step.</div>
       <svg class="flow" id="flow" viewBox="0 0 720 440"></svg>
     </div>
@@ -464,13 +470,13 @@ section > *{position:relative; z-index:1}
     <div class="terms anim" id="terms">
       <div class="term-row" data-t="a"><b>a<sub>i</sub></b><span><strong>Country effect.</strong> Removes each country's level: geography, health system, malaria. What is left is the country against itself.</span></div>
       <div class="term-row" data-t="g"><b>g<sub>t</sub></b><span><strong>Year effect.</strong> Removes what hit all 49 at once: price spikes, COVID, changes in WHO's estimates.</span></div>
-      <div class="term-row" data-t="b"><b>b</b><span><strong>The number we want.</strong> Within a country, how much lower anaemia is after more anaemia-focused policy three years earlier.</span></div>
+      <div class="term-row" data-t="b"><b>b</b><span><strong>The number we want.</strong> Within a country, how anaemia moves after more anaemia policy is in force three years earlier.</span></div>
       <div class="term-row" data-t="c"><b>c</b><span><strong>Income control</strong>, in logs, so a doubling counts the same at $800 as at $8,000.</span></div>
     </div>
     <div class="diagrams">
       <div class="diagram anim">
-        <div class="dt">Why the lag, and what the placebo checks</div>
-        <div class="ds">Policy three years earlier may predict today's anaemia. Policy three years later cannot, so it must show nothing.</div>
+        <div class="dt">Why the lag, and what the lead test checks</div>
+        <div class="ds">Policy three years earlier may predict today's anaemia. Policy three years later cannot; if it "does", governments are reacting to a trend.</div>
         <svg id="lag" viewBox="0 0 640 160"></svg>
       </div>
       <div class="diagram anim">
@@ -480,7 +486,7 @@ section > *{position:relative; z-index:1}
       </div>
     </div>
   </div>
-  <p class="foot anim">Sample: <b>1,004 country-years, 49 countries, 2003–2023.</b> Standard errors clustered by country.</p>
+  <p class="foot anim">Sample: <b>994 country-years, 49 countries, 2003–2023.</b> Standard errors clustered by country.</p>
 </section>
 
 <!-- LADDER OF TESTS -->
@@ -489,15 +495,17 @@ section > *{position:relative; z-index:1}
     <div>
       <div class="label anim">Method</div>
       <h2 class="h2 anim" style="margin-top:12px">A ladder of tests.</h2>
-      <p class="body anim">Each rung tries to break the finding above it. The first rung shows a signal. It does not survive the second or the third.</p>
+      <p class="body anim">Each rung tries to break the finding above it. None of them changes the answer, and two of them sharpen it: the lead test and the bound.</p>
       <div class="obst anim"><span>Registry has no delivery data</span><span>3 in 4 programme records undated</span><span>Income series mislabelled at source</span><span>First food-insecurity pull came back empty, rebuilt</span></div>
     </div>
     <div class="ladder">
-      <div class="rung anim"><img class="ico" src="assets/fluent/barchart.png" alt=""><span class="rt">Two-way fixed effects, 3-year lag<small>Signal: more policy stock, slightly less anaemia</small></span><span class="rr">−0.15 pp</span></div>
-      <div class="rung anim"><img class="ico" src="assets/fluent/placebo.png" alt=""><span class="rt">Placebo: policy from the future<small>Must be zero. It is as large as the estimate.</small></span><span class="rr bad">−0.19 pp</span></div>
-      <div class="rung anim"><img class="ico" src="assets/fluent/trend.png" alt=""><span class="rt">A trend line per country<small>Policy counts only rise, anaemia slowly drifts. Allow for it.</small></span><span class="rr bad">+0.04, p = 0.18</span></div>
+      <div class="rung anim"><img class="ico" src="assets/fluent/barchart.png" alt=""><span class="rt">Two-way fixed effects, 3-year lag<small>The interval spans zero</small></span><span class="rr">−0.21 pp</span></div>
+      <div class="rung anim"><img class="ico" src="assets/fluent/placebo.png" alt=""><span class="rt">Lead test: policy from the future<small>Off zero: governments react to trends; policies do not drive them</small></span><span class="rr bad">−0.34, p = 0.03</span></div>
+      <div class="rung anim"><img class="ico" src="assets/fluent/trend.png" alt=""><span class="rt">A trend line per country<small>One sensitivity among several; it absorbs slow effects too</small></span><span class="rr">−0.02</span></div>
+      <div class="rung anim"><img class="ico" src="assets/fluent/chain.png" alt=""><span class="rt">Event studies, three estimators<small>Around each country's first policy: no robust break</small></span><span class="rr">+0.10 / −0.08</span></div>
+      <div class="rung anim"><img class="ico" src="assets/fluent/puzzle.png" alt=""><span class="rt">336 specifications<small>7% exclude zero; benefits beyond about 0.5 pp per policy are ruled out</small></span><span class="rr">TOST p = 0.03</span></div>
       <div class="rung anim"><img class="ico" src="assets/fluent/loco.png" alt=""><span class="rt">Predict a country never seen<small>Does policy improve the forecast?</small></span><span class="rr bad">22 of 49, chance</span></div>
-      <div class="rung anim"><img class="ico" src="assets/fluent/scale.png" alt=""><span class="rt">Lowest vs highest, on the books<small>Same anaemia programming on both sides</small></span><span class="rr">p = 0.60</span></div>
+      <div class="rung anim"><img class="ico" src="assets/fluent/scale.png" alt=""><span class="rt">Lowest vs highest by context<small>Same policy records on both sides</small></span><span class="rr">p = 0.12</span></div>
     </div>
   </div>
 </section>
@@ -507,14 +515,14 @@ section > *{position:relative; z-index:1}
   <div class="fig-page">
     <div class="fig-top">
       <div class="label anim">Finding 1</div>
-      <h2 class="h2 anim" style="margin-top:12px">Money is not the answer.</h2>
-      <p class="take anim">Anaemia runs from 15% in Rwanda to 60% in Gabon. Income explains <strong>under 5%</strong> of that spread; same-income countries sit 30 to 40 points apart.</p>
+      <h2 class="h2 anim" style="margin-top:12px">Where it is most concerning, and money is not the answer.</h2>
+      <p class="take anim">We scored 194 countries on four indicators: in the worst quarter, and failing to improve? The five of most concern are Burundi, Jordan, Somalia, Lesotho and Lebanon; three of the five are in sub-Saharan Africa, where the data are deepest. In the region, anaemia fell from 44% to 37% between 2000 and 2015, then turned: higher in 2023 than in 2015 in <strong>37 of 49</strong> countries. Income explains <strong>under 5%</strong> of the spread between countries.</p>
     </div>
     <div class="chart anim figcard">
       <div class="ct">Anaemia against income, 2015–2023 means. Orange: the eight highest-anaemia countries. Dark blue: the eight lowest. Vertical lines join two same-income pairs.</div>
       <div class="figclip"><img src="assets/sarah/02_income_scatter.png" alt="Anaemia in women 15 to 49 against GDP per capita, log scale"></div>
     </div>
-    <p class="foot anim">WHO anaemia estimates via FAOSTAT against World Bank GDP per capita, log scale. R² 3 to 4% on 2015–2023 country means, 5.2% pooled. Association, not causation.</p>
+    <p class="foot anim">Concern score: the team's method on the UNICEF women's nutrition database. Trends: WHO 2025 anaemia estimates via FAOSTAT FS. Scatter: WHO anaemia against World Bank GDP per capita (constant 2015 US$), log scale; R² 0.035 on 2015–2023 country means, 6% pooled with year effects. Association, not causation. Scaffold v2.0, data afe63e46c26b.</p>
   </div>
 </section>
 
@@ -530,7 +538,7 @@ section > *{position:relative; z-index:1}
       <div class="ct">Reported anaemia policy stock (left, flag-count of active records) and anaemia in women 15–49 (right, %), 2000–2023</div>
       <div class="figclip"><img src="assets/sarah/03_policy_stock_vs_anaemia.png" alt="Policy stock and anaemia over time, one line per country"></div>
     </div>
-    <p class="foot anim">One grey line per country; blue is the median and middle half of 49 countries. WHO anaemia via FAOSTAT; WHO GIFNA registry. Scaffold v1.1.</p>
+    <p class="foot anim">One grey line per country; blue is the median and middle half of 49 countries. WHO anaemia via FAOSTAT; WHO GIFNA registry. Scaffold v2.0, data afe63e46c26b.</p>
   </div>
 </section>
 
@@ -539,28 +547,28 @@ section > *{position:relative; z-index:1}
   <div class="fig-page">
     <div class="fig-top">
       <div class="label anim">Finding 2</div>
-      <h2 class="h2 anim" style="margin-top:12px">The policy record does not predict outcomes.</h2>
-      <p class="take anim">The placebo, policy from the future, is <strong>as large as the real estimate</strong>. Give each country its own trend and both go to zero.</p>
+      <h2 class="h2 anim" style="margin-top:12px">The policy record does not move anaemia, measurably.</h2>
+      <p class="take anim">Inside a country, one more anaemia policy in force is followed three years later by <strong>−0.2 percentage points, indistinguishable from zero</strong>. The one row off zero is the lead: policies from the future "predict" today's anaemia, the fingerprint of governments reacting to a trend.</p>
     </div>
     <div class="fig-row">
       <div class="chart anim">
         <div class="ct">The coefficient across the ladder</div>
-        <div class="cs">Change in anaemia (percentage points) per unit of policy stock, with 95% intervals where estimated</div>
+        <div class="cs">Change in anaemia (percentage points) per anaemia policy in force, with 95% intervals</div>
         <svg id="coef" viewBox="0 0 680 400"></svg>
-        <div class="legend"><span><i style="background:var(--c1)"></i>Model variants</span><span><i style="background:var(--ink-faint)"></i>Placebo (policy from the future)</span><span><i style="background:var(--c2)"></i>Same models with a trend per country</span></div>
+        <div class="legend"><span><i style="background:var(--c1)"></i>Main and its variants</span><span><i style="background:var(--ink-faint)"></i>Lead test (policy from the future)</span><span><i style="background:var(--c2)"></i>With a trend per country</span><span><i style="background:var(--c3)"></i>Differences and lagged outcome</span><span><i style="background:var(--c5)"></i>Context controls</span><span><i style="background:var(--c4)"></i>Survey-anchored years only</span></div>
       </div>
       <div class="chart anim">
         <div class="ct">In numbers</div>
-        <div class="cs">Scaffold v1.1 results, every value tagged in RESULTS.md</div>
+        <div class="cs">Scaffold v2.0 results, every value tagged in RESULTS.md</div>
         <div class="callouts">
-        <div class="co"><img class="ico sm" src="assets/fluent/barchart.png" alt=""><div><b class="num accent">−0.15</b><span>Main model. Policy stock three years earlier; the interval crosses zero.</span></div></div>
-        <div class="co"><img class="ico sm" src="assets/fluent/placebo.png" alt=""><div><b class="num" style="color:var(--ink-soft)">−0.19</b><span>Placebo. Policy from the future, as large as the real one.</span></div></div>
-        <div class="co"><img class="ico sm" src="assets/fluent/trend.png" alt=""><div><b class="num" style="color:var(--c2)">+0.04</b><span>With a trend per country. Both go to zero (p = 0.18 and 0.86).</span></div></div>
-        <div class="co"><img class="ico sm" src="assets/fluent/loco.png" alt=""><div><b class="num">22 / 49</b><span>Out of sample, policy helps in 22 countries. Chance (p = 0.57).</span></div></div>
+        <div class="co"><img class="ico sm" src="assets/fluent/barchart.png" alt=""><div><b class="num accent">−0.21</b><span>Main model. Anaemia policies in force three years earlier; the interval spans zero (−0.62 to +0.20).</span></div></div>
+        <div class="co"><img class="ico sm" src="assets/fluent/placebo.png" alt=""><div><b class="num" style="color:var(--ink-soft)">−0.34</b><span>Lead test. Policy from the future, p = 0.03: governments reacting to trends, not policies driving them.</span></div></div>
+        <div class="co"><img class="ico sm" src="assets/fluent/chain.png" alt=""><div><b class="num" style="color:var(--c2)">+0.10 / −0.08</b><span>Around each country's first policy: two-stage DiD and local-projections DiD sit at zero. No robust break.</span></div></div>
+        <div class="co"><img class="ico sm" src="assets/fluent/puzzle.png" alt=""><div><b class="num">~0.5 pp</b><span>Benefits larger than about half a point per policy are ruled out; smaller effects could not be detected (336 specifications, 7% exclude zero).</span></div></div>
         </div>
       </div>
     </div>
-    <p class="foot anim">Two-way fixed effects, errors clustered by country, 49 countries, 2003–2023. Association within countries, not causation. Scaffold v1.1, data c16da882a81f.</p>
+    <p class="foot anim">Two-way fixed effects, errors clustered by country, 49 countries, 2003–2023. Association within countries, not causation. Scaffold v2.0, data afe63e46c26b.</p>
   </div>
 </section>
 
@@ -569,29 +577,29 @@ section > *{position:relative; z-index:1}
   <div class="fig-page">
     <div class="fig-top">
       <div class="label anim">Finding 3</div>
-      <h2 class="h2 anim" style="margin-top:12px">Who beats the odds, and it is not the paper trail.</h2>
-      <p class="take anim">Rwanda, Ethiopia, Namibia and Uganda sit far below what income predicts. On the books, they report <strong>the same anaemia programming</strong> as the highest eight.</p>
+      <h2 class="h2 anim" style="margin-top:12px">Who beats their context, and it is not the paper trail.</h2>
+      <p class="take anim">Income, fertility, malaria, urbanisation, sanitation, sub-region and terrain explain 81% of the differences in levels. Nigeria, Namibia, Cameroon, Ghana and Liberia sit six to ten points below the level their context predicts. On the books, they report <strong>the same policy record</strong> as the eight above it.</p>
     </div>
     <div class="fig-row">
       <div class="chart anim">
-        <div class="ct">Anaemia relative to what income predicts</div>
-        <div class="cs">Percentage points above or below the income-only model, mean 2015–2023, level in brackets</div>
+        <div class="ct">Anaemia relative to what context predicts</div>
+        <div class="cs">Percentage points above or below the context model, mean 2015–2023, level in brackets</div>
         <svg id="rank" viewBox="0 0 680 470"></svg>
-        <div class="legend"><span><i style="background:var(--c3)"></i>Lower than income predicts</span><span><i style="background:var(--c1)"></i>Higher than income predicts</span></div>
+        <div class="legend"><span><i style="background:var(--c3)"></i>Lower than context predicts</span><span><i style="background:var(--c1)"></i>Higher than context predicts</span></div>
       </div>
       <div class="chart anim">
         <div class="ct">What the two groups have on the books</div>
         <div class="cs">Mean reported policy stock, 2015–2023</div>
         <div class="contrast">
-          <div class="crow"><span class="cn">Anaemia programming</span><span class="cv lo">9.4</span><span class="cv hi">8.2</span><span class="cp">p = 0.60</span></div>
-          <div class="crow"><span class="cn">Active policies</span><span class="cv lo">17.1</span><span class="cv hi">9.9</span><span class="cp">p = 0.05</span></div>
-          <div class="crow"><span class="cn">Policy exposure, years</span><span class="cv lo">216</span><span class="cv hi">135</span><span class="cp">p = 0.03</span></div>
-          <div class="crow"><span class="cn">Coordination mechanisms</span><span class="cv lo">0.9</span><span class="cv hi">3.1</span><span class="cp">p = 0.07</span></div>
+          <div class="crow"><span class="cn">Anaemia policies in force (dated)</span><span class="cv lo">4.5</span><span class="cv hi">2.8</span><span class="cp">p = 0.12</span></div>
+          <div class="crow"><span class="cn">Anaemia records, all three files</span><span class="cv lo">5.4</span><span class="cv hi">3.7</span><span class="cp">p = 0.17</span></div>
+          <div class="crow"><span class="cn">Anaemia programming (team composite)</span><span class="cv lo">10.8</span><span class="cv hi">6.6</span><span class="cp">p = 0.07</span></div>
+          <div class="crow"><span class="cn">Active policies, any topic</span><span class="cv lo">15.7</span><span class="cv hi">11.0</span><span class="cp">p = 0.13</span></div>
         </div>
-        <div class="legend"><span><i style="background:var(--c3)"></i>Lowest eight</span><span><i style="background:var(--c1)"></i>Highest eight</span></div>
+        <div class="legend"><span><i style="background:var(--c3)"></i>Lower eight</span><span><i style="background:var(--c1)"></i>Higher eight</span></div>
       </div>
     </div>
-    <p class="foot anim">Income-adjusted level ranking, mean 2015–2023; Mann-Whitney test per row, eight countries a side. GIFNA counts measure reporting as much as programming: a description, not evidence of effect.</p>
+    <p class="foot anim">Context ranking (R² 0.81, 45 countries), mean 2015–2023; Mann-Whitney test per row, eight countries a side. GIFNA counts measure reporting as much as programming: a description, not evidence of effect. A screening device, not a verdict. Scaffold v2.0, data afe63e46c26b.</p>
   </div>
 </section>
 
@@ -605,26 +613,25 @@ section > *{position:relative; z-index:1}
 <section id="dash" data-page>
   <div class="label anim">The tool</div>
   <h2 class="h2 anim" style="margin-top:12px">Check the claim yourself.</h2>
+  <style>#dash .filt .fv::after{content:''}</style>
   <div class="dash">
     <div class="filters anim">
-      <div class="fh">Filters</div>
-      <div class="filt"><div class="fl">Outcome</div><div class="fv">Anaemia, 15–49</div></div>
-      <div class="filt"><div class="fl">Countries</div><div class="fv">All 49</div></div>
-      <div class="filt"><div class="fl">Years</div><div class="fv">2000 to 2023</div></div>
-      <div class="filt"><div class="fl">Policy feature</div><div class="fv">Anaemia programming</div></div>
-      <div class="filt"><div class="fl">Lag</div><div class="fv">3 years</div></div>
-      <div class="filt"><div class="fl">Income measure</div><div class="fv">GDP per capita</div></div>
-      <div class="toggle on"><i></i>Placebo</div>
-      <div class="toggle on"><i></i>Country trends</div>
+      <div class="fh">What is behind it</div>
+      <div class="filt"><div class="fl">Panel</div><div class="fv">49 × 26 × 174</div></div>
+      <div class="filt"><div class="fl">Sources</div><div class="fv">A dozen datasets</div></div>
+      <div class="filt"><div class="fl">Rebuild</div><div class="fv">One command</div></div>
+      <div class="filt"><div class="fl">Tests</div><div class="fv">24 automated</div></div>
+      <div class="filt"><div class="fl">Cross-check</div><div class="fv">Colab notebook</div></div>
+      <div class="filt"><div class="fl">Data version</div><div class="fv">afe63e46c26b</div></div>
     </div>
     <div class="dash-main">
       <div class="dash-kpis">
-        <div class="kpi anim"><div class="kl">Coefficient, with trends</div><div class="kv num accent">+0.04<small>−0.15 without trends</small></div></div>
-        <div class="kpi anim"><div class="kl">95% interval</div><div class="kv num" style="font-size:22px">−0.02 to +0.10<small>includes zero</small></div></div>
+        <div class="kpi anim"><div class="kl">Main estimate</div><div class="kv num accent">−0.21<small>95%: −0.62 to +0.20</small></div></div>
+        <div class="kpi anim"><div class="kl">Lead test</div><div class="kv num">−0.34<small>p = 0.03, trend or targeting</small></div></div>
+        <div class="kpi anim"><div class="kl">Ruled out</div><div class="kv num" style="font-size:22px">beyond ~0.5 pp<small>per policy, TOST p = 0.03</small></div></div>
         <div class="kpi anim"><div class="kl">Beats baseline</div><div class="kv num">22 / 49<small>chance, p = 0.57</small></div></div>
-        <div class="kpi anim"><div class="kl">Tail contrast</div><div class="kv num">p = 0.60<small>no difference</small></div></div>
       </div>
-      <div class="ph anim" data-ph="Dashboard · map, coefficient plot, ranking"><span class="ph-note">Screen recording or live embed. Every number reads from the same hash-stamped results as the report: 13 tests, R equals Python to 1e-6.</span></div>
+      <div class="ph anim" data-ph="Evidence scaffold · panel, ladder, notebook"><span class="ph-note">Screen recording: run_all.sh rebuilds the panel, runs the ladder and writes the report; the Colab notebook re-fits the headline row to the same number. Every number reads from the same hash-stamped results as the report. Code, panel and report are public.</span></div>
     </div>
   </div>
 </section>
@@ -635,10 +642,10 @@ section > *{position:relative; z-index:1}
   <h2 class="h2 anim" style="margin-top:12px">Measure delivery, not documents.</h2>
   <div class="recs">
     <div class="rec anim"><img class="ico lg" src="assets/fluent/who.png" alt=""><div class="to">Data custodians · WHO, FAO</div><h3>Record dates and coverage for every programme</h3><p>Three in four programme records carry no date, and the coverage field is empty. Delivery data is the missing link.</p></div>
-    <div class="rec anim"><img class="ico lg" src="assets/fluent/ministry.png" alt=""><div class="to">Ministries · high-burden band</div><h3>Report coverage at the point of delivery</h3><p>Supplementation and fortification reach, not policy counts. Study what Rwanda, Ethiopia, Namibia and Uganda did differently.</p></div>
-    <div class="rec anim"><img class="ico lg" src="assets/fluent/analyst.png" alt=""><div class="to">Analysts</div><h3>Survive a placebo before saying policies work</h3><p>Registry counts must hold against a placebo lead and country trends. Ours did not.</p></div>
+    <div class="rec anim"><img class="ico lg" src="assets/fluent/ministry.png" alt=""><div class="to">Ministries · high-burden band</div><h3>Report coverage at the point of delivery</h3><p>Supplementation and fortification reach, not policy counts. Learn from the countries below their context: Nigeria, Namibia, Cameroon, Ghana, Liberia.</p></div>
+    <div class="rec anim"><img class="ico lg" src="assets/fluent/analyst.png" alt=""><div class="to">Funders and researchers</div><h3>Anchor the estimates, pre-register the effect worth finding</h3><p>More surveys that measure haemoglobin (33 of 49 countries have one in the window), and a smallest effect of interest set in advance, so a null reads as a bound, not an absence.</p></div>
   </div>
-  <p class="next anim"><b>Next for us:</b> fortification laws as an event study, food-access data from 2015, survey-measured supplementation coverage, and a policy-text reading of the sixteen tail countries.</p>
+  <p class="next anim"><b>Next for us:</b> subnational data, cost-of-diet linkage, sensitivity bounds for the event study, and schistosomiasis treatment coverage.</p>
 </section>
 
 <!-- CONCLUSION -->
@@ -649,7 +656,7 @@ section > *{position:relative; z-index:1}
       <p class="body anim" style="margin-top:22px">Until delivery is recorded, nobody can say which policies work.</p>
       <div class="end-icons anim"><img class="ico" src="assets/fluent/registry.png" alt=""><span class="arrow-txt">→</span><img class="ico" src="assets/fluent/blood.png" alt=""><span class="end-cap">record what reaches women, not what is written</span></div>
       <div class="endmark anim">Primary Pea · Ink and Iron</div>
-      <p class="credits anim">Data: WHO, UNICEF, FAOSTAT, UN IGME, World Bank, GIFNA, GFDx. Illustrations: Storyset, unDraw. Icons: Microsoft Fluent Emoji.</p>
+      <p class="credits anim">Data: WHO, UNICEF, FAOSTAT, UN IGME, World Bank, WHO GIFNA, GFDx, DHS, WHO PCT databank, Nunn &amp; Puga. Illustrations: Storyset, unDraw. Icons: Microsoft Fluent Emoji. Scaffold v2.0, data version afe63e46c26b.</p>
     </div>
     <div class="inkwrap"><svg id="inkmap-end" viewBox="0 0 600 600"></svg></div>
   </div>
@@ -662,6 +669,7 @@ section > *{position:relative; z-index:1}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
 <script src="assets/world-110m.js"></script>
+<script src="assets/anaemia_wra_2000_2023.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
 <script type="application/json" id="heartJson">{"v":"5.3.4","fr":25,"ip":0,"op":40,"w":596,"h":842,"nm":"heart","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"\u041a\u0440\u0438\u0432\u044b\u0435 heart-full","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[295.167,290.995,0],"ix":2},"a":{"a":0,"k":[164.297,145.858,0],"ix":1},"s":{"a":1,"k":[{"i":{"x":[0.667,0.667,0.667],"y":[1,1,1]},"o":{"x":[0.333,0.333,0.333],"y":[0,0,0]},"n":["0p667_1_0p333_0","0p667_1_0p333_0","0p667_1_0p333_0"],"t":15,"s":[100,100,100],"e":[120,120,100]},{"i":{"x":[0.667,0.667,0.667],"y":[1,1,1]},"o":{"x":[0.333,0.333,0.333],"y":[0,0,0]},"n":["0p667_1_0p333_0","0p667_1_0p333_0","0p667_1_0p333_0"],"t":17,"s":[120,120,100],"e":[100,100,100]},{"t":19}],"ix":6}},"ao":0,"hasMask":true,"masksProperties":[{"inv":false,"mode":"a","pt":{"a":1,"k":[{"i":{"x":0.833,"y":0.833},"o":{"x":0.333,"y":0},"n":"0p833_0p833_0p333_0","t":0,"s":[{"i":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],"v":[[31.464,278.408],[31.465,279.215],[297.129,279.215],[297.129,278.408],[229.14,278.408],[72.692,278.408]],"c":true}],"e":[{"i":[[0,0],[0,0],[0,0],[0,0],[32.446,-20.3],[34.254,13.569]],"o":[[0,0],[0,0],[0,0],[0,0],[-32.446,20.3],[-34.254,-13.569]],"v":[[31.464,229.432],[31.465,279.215],[297.129,279.215],[297.129,229.432],[226.298,223.369],[86.883,229.432]],"c":true}]},{"i":{"x":0.833,"y":0.833},"o":{"x":0.167,"y":0.167},"n":"0p833_0p833_0p167_0p167","t":4,"s":[{"i":[[0,0],[0,0],[0,0],[0,0],[32.446,-20.3],[34.254,13.569]],"o":[[0,0],[0,0],[0,0],[0,0],[-32.446,20.3],[-34.254,-13.569]],"v":[[31.464,229.432],[31.465,279.215],[297.129,279.215],[297.129,229.432],[226.298,223.369],[86.883,229.432]],"c":true}],"e":[{"i":[[0,0],[0,0],[0,0],[0,0],[57.016,-35.673],[32.916,-14.809]],"o":[[0,0],[0,0],[0,0],[0,0],[-57.016,35.673],[-64.5,29.019]],"v":[[31.464,192.344],[31.465,279.215],[297.129,279.215],[297.129,192.344],[224.145,181.69],[97.63,192.344]],"c":true}]},{"i":{"x":0.833,"y":0.833},"o":{"x":0.167,"y":0.167},"n":"0p833_0p833_0p167_0p167","t":6,"s":[{"i":[[0,0],[0,0],[0,0],[0,0],[57.016,-35.673],[32.916,-14.809]],"o":[[0,0],[0,0],[0,0],[0,0],[-57.016,35.673],[-64.5,29.019]],"v":[[31.464,192.344],[31.465,279.215],[297.129,279.215],[297.129,192.344],[224.145,181.69],[97.63,192.344]],"c":true}],"e":[{"i":[[0,0],[0,0],[0,0],[0,0],[74.511,22.519],[28.063,17.519]],"o":[[0,0],[0,0],[0,0],[0,0],[-74.511,-22.519],[-28.063,-17.519]],"v":[[31.465,101.882],[31.465,279.215],[297.129,279.215],[297.129,101.882],[229.141,101.882],[72.693,101.882]],"c":true}]},{"i":{"x":0.833,"y":0.833},"o":{"x":0.167,"y":0.167},"n":"0p833_0p833_0p167_0p167","t":10,"s":[{"i":[[0,0],[0,0],[0,0],[0,0],[74.511,22.519],[28.063,17.519]],"o":[[0,0],[0,0],[0,0],[0,0],[-74.511,-22.519],[-28.063,-17.519]],"v":[[31.465,101.882],[31.465,279.215],[297.129,279.215],[297.129,101.882],[229.141,101.882],[72.693,101.882]],"c":true}],"e":[{"i":[[0,0],[0,0],[0,0],[0,0],[22.989,19.561],[27.563,22.939]],"o":[[0,0],[0,0],[0,0],[0,0],[-28.689,-24.411],[-27.563,-22.939]],"v":[[31.465,66.802],[31.465,279.215],[297.129,279.215],[297.129,66.802],[245.641,67.302],[102.193,66.741]],"c":true}]},{"i":{"x":0.667,"y":1},"o":{"x":0.167,"y":0.167},"n":"0p667_1_0p167_0p167","t":12,"s":[{"i":[[0,0],[0,0],[0,0],[0,0],[22.989,19.561],[27.563,22.939]],"o":[[0,0],[0,0],[0,0],[0,0],[-28.689,-24.411],[-27.563,-22.939]],"v":[[31.465,66.802],[31.465,279.215],[297.129,279.215],[297.129,66.802],[245.641,67.302],[102.193,66.741]],"c":true}],"e":[{"i":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],"v":[[21.465,25.952],[21.3,290.76],[307.964,290.76],[308.129,25.952],[229.141,26.908],[72.693,26.908]],"c":true}]},{"i":{"x":0.833,"y":0.833},"o":{"x":0.167,"y":0},"n":"0p833_0p833_0p167_0","t":15,"s":[{"i":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],"v":[[21.465,25.952],[21.3,290.76],[307.964,290.76],[308.129,25.952],[229.141,26.908],[72.693,26.908]],"c":true}],"e":[{"i":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],"v":[[23.211,24.75],[23.142,284.039],[306.896,283.953],[306.965,24.664],[229.141,25.149],[72.693,25.149]],"c":true}]},{"i":{"x":0.667,"y":1},"o":{"x":0.167,"y":0.167},"n":"0p667_1_0p167_0p167","t":17,"s":[{"i":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],"v":[[23.211,24.75],[23.142,284.039],[306.896,283.953],[306.965,24.664],[229.141,25.149],[72.693,25.149]],"c":true}],"e":[{"i":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],"v":[[24.465,24.908],[24.465,288.215],[306.129,288.067],[306.129,24.76],[229.141,24.908],[72.693,24.908]],"c":true}]},{"i":{"x":0.833,"y":0.833},"o":{"x":0.167,"y":0},"n":"0p833_0p833_0p167_0","t":19,"s":[{"i":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],"v":[[24.465,24.908],[24.465,288.215],[306.129,288.067],[306.129,24.76],[229.141,24.908],[72.693,24.908]],"c":true}],"e":[{"i":[[0,0],[0,0],[0,0],[0,0],[22.989,19.561],[27.563,22.939]],"o":[[0,0],[0,0],[0,0],[0,0],[-28.689,-24.411],[-27.563,-22.939]],"v":[[31.465,66.802],[31.465,279.215],[297.129,279.215],[297.129,66.802],[245.641,67.302],[102.193,66.741]],"c":true}]},{"i":{"x":0.833,"y":0.833},"o":{"x":0.167,"y":0.167},"n":"0p833_0p833_0p167_0p167","t":22,"s":[{"i":[[0,0],[0,0],[0,0],[0,0],[22.989,19.561],[27.563,22.939]],"o":[[0,0],[0,0],[0,0],[0,0],[-28.689,-24.411],[-27.563,-22.939]],"v":[[31.465,66.802],[31.465,279.215],[297.129,279.215],[297.129,66.802],[245.641,67.302],[102.193,66.741]],"c":true}],"e":[{"i":[[0,0],[0,0],[0,0],[0,0],[74.511,22.519],[28.063,17.519]],"o":[[0,0],[0,0],[0,0],[0,0],[-74.511,-22.519],[-28.063,-17.519]],"v":[[31.465,101.882],[31.465,279.215],[297.129,279.215],[297.129,101.882],[229.141,101.882],[72.693,101.882]],"c":true}]},{"i":{"x":0.833,"y":0.833},"o":{"x":0.167,"y":0.167},"n":"0p833_0p833_0p167_0p167","t":24,"s":[{"i":[[0,0],[0,0],[0,0],[0,0],[74.511,22.519],[28.063,17.519]],"o":[[0,0],[0,0],[0,0],[0,0],[-74.511,-22.519],[-28.063,-17.519]],"v":[[31.465,101.882],[31.465,279.215],[297.129,279.215],[297.129,101.882],[229.141,101.882],[72.693,101.882]],"c":true}],"e":[{"i":[[0,0],[0,0],[0,0],[0,0],[57.016,-35.673],[32.916,-14.809]],"o":[[0,0],[0,0],[0,0],[0,0],[-57.016,35.673],[-64.5,29.019]],"v":[[31.464,192.344],[31.465,279.215],[297.129,279.215],[297.129,192.344],[224.145,181.69],[97.63,192.344]],"c":true}]},{"i":{"x":0.833,"y":0.833},"o":{"x":0.167,"y":0.167},"n":"0p833_0p833_0p167_0p167","t":27,"s":[{"i":[[0,0],[0,0],[0,0],[0,0],[57.016,-35.673],[32.916,-14.809]],"o":[[0,0],[0,0],[0,0],[0,0],[-57.016,35.673],[-64.5,29.019]],"v":[[31.464,192.344],[31.465,279.215],[297.129,279.215],[297.129,192.344],[224.145,181.69],[97.63,192.344]],"c":true}],"e":[{"i":[[0,0],[0,0],[0,0],[0,0],[32.446,-20.3],[34.254,13.569]],"o":[[0,0],[0,0],[0,0],[0,0],[-32.446,20.3],[-34.254,-13.569]],"v":[[31.464,229.432],[31.465,279.215],[297.129,279.215],[297.129,229.432],[226.298,223.369],[86.883,229.432]],"c":true}]},{"i":{"x":0.667,"y":1},"o":{"x":0.167,"y":0.167},"n":"0p667_1_0p167_0p167","t":29,"s":[{"i":[[0,0],[0,0],[0,0],[0,0],[32.446,-20.3],[34.254,13.569]],"o":[[0,0],[0,0],[0,0],[0,0],[-32.446,20.3],[-34.254,-13.569]],"v":[[31.464,229.432],[31.465,279.215],[297.129,279.215],[297.129,229.432],[226.298,223.369],[86.883,229.432]],"c":true}],"e":[{"i":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]],"v":[[31.464,278.408],[31.465,279.215],[297.129,279.215],[297.129,278.408],[229.14,278.408],[72.692,278.408]],"c":true}]},{"t":32}],"ix":1},"o":{"a":0,"k":100,"ix":3},"x":{"a":0,"k":0,"ix":4},"nm":"\u041c\u0430\u0441\u043a\u0430 1"}],"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[42.857,42.857],[8.241,-28.351],[0,0],[-25.05,10.466],[-18.462,-25.054],[30.593,-33.23],[0,0],[-39.634,37.438]],"o":[[-35.648,-35.648],[-1.715,2.176],[0,0],[1.942,-0.811],[19.871,26.968],[-61.006,66.266],[0,0],[40.781,-38.522]],"v":[[32.202,-93.121],[-69.534,-75.715],[-72.538,-61.147],[-40.194,-78.088],[13.213,-64.469],[-12.897,22.395],[-75.059,128.769],[16.681,46.289]],"c":true},"ix":2},"nm":"\u041a\u043e\u043d\u0442\u0443\u0440 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[0.900073242188,0,0.000935453001,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"nm":"\u0417\u0430\u043b\u0438\u0432\u043a\u0430 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[239.356,147.039],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"\u041f\u0440\u0435\u043e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u0442\u044c"}],"nm":"\u0413\u0440\u0443\u043f\u043f\u0430 1","np":4,"cix":2,"ix":1,"mn":"ADBE Vector Group","hd":false},{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[-8.835,-10.624],[-17.581,14.62],[8.835,10.624],[17.581,-14.62]],"o":[[8.835,10.624],[17.58,-14.62],[-8.835,-10.624],[-17.58,14.62]],"v":[[-31.832,26.473],[15.998,19.237],[31.832,-26.472],[-15.998,-19.236]],"c":true},"ix":2},"nm":"\u041a\u043e\u043d\u0442\u0443\u0440 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[0.999999820485,0.999999760646,0.999999820485,1],"ix":4},"o":{"a":0,"k":30,"ix":5},"r":1,"nm":"\u0417\u0430\u043b\u0438\u0432\u043a\u0430 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[85.659,82.571],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"\u041f\u0440\u0435\u043e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u0442\u044c"}],"nm":"\u0413\u0440\u0443\u043f\u043f\u0430 2","np":4,"cix":2,"ix":2,"mn":"ADBE Vector Group","hd":false},{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[42.857,42.857],[0.47,-40.287],[0,0],[40.363,-40.363],[-39.668,-39.668],[0,0],[-40.321,40.321]],"o":[[-40.343,-40.343],[0,0],[-0.402,-40.318],[-42.857,42.857],[40.322,40.321],[0,0],[39.668,-39.668]],"v":[[108.94,-92.995],[0.512,-62.415],[-0.51,-62.353],[-108.94,-92.995],[-91.74,47.47],[-0.046,133.358],[91.74,47.47]],"c":true},"ix":2},"nm":"\u041a\u043e\u043d\u0442\u0443\u0440 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"st","c":{"a":0,"k":[0,0,0,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":5,"ix":5},"lc":1,"lj":1,"ml":10,"ml2":{"a":0,"k":10,"ix":8},"nm":"\u041e\u0431\u0432\u043e\u0434\u043a\u0430 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[164.297,145.858],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"\u041f\u0440\u0435\u043e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u0442\u044c"}],"nm":"\u0413\u0440\u0443\u043f\u043f\u0430 3","np":2,"cix":2,"ix":3,"mn":"ADBE Vector Group","hd":false},{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[42.857,42.857],[0.47,-40.287],[0,0],[40.363,-40.363],[-39.668,-39.668],[0,0],[-40.321,40.321]],"o":[[-40.343,-40.343],[0,0],[-0.402,-40.318],[-42.857,42.857],[40.322,40.321],[0,0],[39.668,-39.668]],"v":[[108.94,-92.995],[0.512,-62.415],[-0.51,-62.353],[-108.94,-92.995],[-91.74,47.47],[-0.046,133.358],[91.74,47.47]],"c":true},"ix":2},"nm":"\u041a\u043e\u043d\u0442\u0443\u0440 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,0,0.00105432307,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"nm":"\u0417\u0430\u043b\u0438\u0432\u043a\u0430 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[164.297,145.858],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"\u041f\u0440\u0435\u043e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u0442\u044c"}],"nm":"\u0413\u0440\u0443\u043f\u043f\u0430 4","np":4,"cix":2,"ix":4,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":40,"st":0,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"\u041a\u0440\u0438\u0432\u044b\u0435 Layer 1 copy","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[295.167,290.995,0],"ix":2},"a":{"a":0,"k":[164.297,145.858,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[42.857,42.857],[0.47,-40.287],[0,0],[40.363,-40.363],[-39.668,-39.668],[0,0],[-40.321,40.321]],"o":[[-40.343,-40.343],[0,0],[-0.402,-40.318],[-42.857,42.857],[40.322,40.321],[0,0],[39.668,-39.668]],"v":[[108.94,-92.995],[0.512,-62.415],[-0.51,-62.353],[-108.94,-92.995],[-91.74,47.47],[-0.046,133.358],[91.74,47.47]],"c":true},"ix":2},"nm":"\u041a\u043e\u043d\u0442\u0443\u0440 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"st","c":{"a":0,"k":[0,0,0,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":5,"ix":5},"lc":1,"lj":1,"ml":10,"ml2":{"a":0,"k":10,"ix":8},"nm":"\u041e\u0431\u0432\u043e\u0434\u043a\u0430 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[164.297,145.858],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"\u041f\u0440\u0435\u043e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u0442\u044c"}],"nm":"\u0413\u0440\u0443\u043f\u043f\u0430 1","np":2,"cix":2,"ix":1,"mn":"ADBE Vector Group","hd":false},{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[42.857,42.857],[0.47,-40.287],[0,0],[40.363,-40.363],[-39.668,-39.668],[0,0],[-40.321,40.321]],"o":[[-40.343,-40.343],[0,0],[-0.402,-40.318],[-42.857,42.857],[40.322,40.321],[0,0],[39.668,-39.668]],"v":[[108.94,-92.995],[0.512,-62.415],[-0.51,-62.353],[-108.94,-92.995],[-91.74,47.47],[-0.046,133.358],[91.74,47.47]],"c":true},"ix":2},"nm":"\u041a\u043e\u043d\u0442\u0443\u0440 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[0.76947703642,0.769476916743,0.76947703642,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"nm":"\u0417\u0430\u043b\u0438\u0432\u043a\u0430 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[164.297,145.858],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"\u041f\u0440\u0435\u043e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u0442\u044c"}],"nm":"\u0413\u0440\u0443\u043f\u043f\u0430 2","np":4,"cix":2,"ix":2,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":40,"st":0,"bm":0}],"markers":[]}</script>
 <script>
@@ -723,8 +731,8 @@ ScrollTrigger.create({ trigger:'main', start:'top top', end:'bottom bottom', onU
 /* ---------- lineage flow: sources → assembly → panel ---------- */
 (() => {
   const svg = d3.select('#flow'); if (svg.empty()) return;
-  const sources = ['UNICEF · women\'s nutrition','FAOSTAT FS · six outcomes','FAOSTAT · cost of a healthy diet','FAOSTAT · FIES food insecurity','UN IGME · child mortality','World Bank · GDP per capita','WHO GIFNA · policy registry','GFDx · fortification laws'];
-  const x0 = 8, w0 = 224, h0 = 34, gap = 48, yStart = 22;
+  const sources = ['UNICEF · women\'s nutrition','FAOSTAT FS · six outcomes','FAOSTAT · cost of a healthy diet','FAOSTAT · FIES food insecurity','UN IGME · child mortality','World Bank · income and context','WHO GIFNA · policy registry','GFDx · fortification laws','DHS · survey rounds','WHO PCT · deworming coverage'];
+  const x0 = 8, w0 = 224, h0 = 30, gap = 40, yStart = 22;
   const ax = 300, ay = 130, aw = 160, ah = 172;      // assembly
   const px = 512, py = 158, pw = 200, ph = 116;      // panel
   const g = svg.append('g');
@@ -748,12 +756,12 @@ ScrollTrigger.create({ trigger:'main', start:'top top', end:'bottom bottom', onU
     m.append('animateMotion').attr('dur','1.6s').attr('repeatCount','indefinite').attr('begin',(k*.55)+'s').append('mpath').attr('href','#wireP'); }
   g.append('rect').attr('class','node panel').attr('x',px).attr('y',py).attr('width',pw).attr('height',ph).attr('rx',18);
   g.append('text').attr('class','tb').attr('x',px+pw/2).attr('y',py+34).attr('text-anchor','middle').text('The panel');
-  g.append('text').attr('x',px+pw/2).attr('y',py+58).attr('text-anchor','middle').text('1,274 rows × 103 columns');
+  g.append('text').attr('x',px+pw/2).attr('y',py+58).attr('text-anchor','middle').text('1,274 rows × 174 columns');
   g.append('text').attr('class','t2').attr('x',px+pw/2).attr('y',py+78).attr('text-anchor','middle').text('49 countries · 2000–2025');
-  g.append('text').attr('class','t2').attr('x',px+pw/2).attr('y',py+ph+30).attr('text-anchor','middle').text('→ frame → models → report · R · tests');
+  g.append('text').attr('class','t2').attr('x',px+pw/2).attr('y',py+ph+30).attr('text-anchor','middle').text('→ frame → models → report · tests');
 })();
 
-/* ---------- lag / placebo timeline ---------- */
+/* ---------- lag / lead-test timeline ---------- */
 (() => {
   const svg = d3.select('#lag'); if (svg.empty()) return;
   const ticks = ['t−5','t−4','t−3','t−2','t−1','t','t+1','t+2','t+3'];
@@ -774,10 +782,10 @@ ScrollTrigger.create({ trigger:'main', start:'top top', end:'bottom bottom', onU
     m.append('animateMotion').attr('dur','2.4s').attr('repeatCount','indefinite').append('mpath').attr('href','#'+id);
     return p; };
   arc('t−3','t',C1,'main: policy three years earlier',52,'arcMain');
-  arc('t+3','t',FAINT,'placebo: three years later, must be zero',30,'arcPlac');
+  arc('t+3','t',FAINT,'lead test: three years later',30,'arcPlac');
   svg.append('text').attr('x',x('t−3')).attr('y',y+48).attr('text-anchor','middle').attr('fill',C1).attr('font-weight',600).text('policy');
   svg.append('text').attr('x',x('t+3')).attr('y',y+48).attr('text-anchor','middle').attr('fill',FAINT).attr('font-weight',600).text('policy');
-  svg.append('text').attr('x',320).attr('y',152).attr('text-anchor','middle').attr('class','t2').text('If the placebo "works", the association is a shared trend, not the policy. It did: −0.19 vs −0.15.');
+  svg.append('text').attr('x',320).attr('y',152).attr('text-anchor','middle').attr('class','t2').text('If the lead "predicts", governments are reacting to a trend, not policies driving one. It does: −0.34 vs −0.21.');
 })();
 
 /* ---------- leave-one-country-out ---------- */
@@ -789,36 +797,40 @@ ScrollTrigger.create({ trigger:'main', start:'top top', end:'bottom bottom', onU
   const lbl = svg.append('text').attr('x', x0).attr('y', y-14).attr('fill',C1).attr('font-weight',700).text('held out');
   svg.append('text').attr('x',x0).attr('y',y+52).attr('class','t2').text('fit on the other 48 · country + year effects, lagged policy, log income');
   svg.append('text').attr('x',x0).attr('y',y+72).attr('class','t2').text('predict its whole 2000–2023 path · repeat × 49 · pool the errors');
-  svg.append('text').attr('x',x0).attr('y',y+100).attr('font-weight',600).text('Result: adding policy lowers a country\'s own error in 22 of 49, chance (p = 0.57). Error 1.94 → 1.94 points.');
+  svg.append('text').attr('x',x0).attr('y',y+100).attr('font-weight',600).text('Result: policy lowers a country\'s own error in 22 of 49, chance (p = 0.57). Error 1.92 → 1.93 points.');
   if (reduced) return;
   let i = 0; const tick = () => { cells.forEach((c,k) => c.attr('opacity', k===i ? .15 : .55));
     held.attr('x', x0 + i*cw + 1); lbl.attr('x', Math.min(x0 + i*cw, x0+w-60)); i = (i+1)%n; };
   once('#loco', () => { tick(); setInterval(tick, 260); });
 })();
 
-/* ---------- coefficient ladder (real v1.1 numbers) ---------- */
+/* ---------- coefficient ladder (scaffold v2.0, data afe63e46c26b; pp of anaemia per anaemia policy in force, 3-year lag) ---------- */
 (() => {
-  const svg = d3.select('#coef'); if (svg.empty()) return;
-  const rows = [
-    { l:'Policy stock, 3-year lag',        est:-0.152, lo:-0.379, hi:0.074, k:'main' },
-    { l:'Lag 2 years',                     est:-0.160, k:'main' },
-    { l:'Lag 5 years',                     est:-0.142, k:'main' },
-    { l:'Without South Sudan, Eritrea',    est:-0.151, k:'main' },
-    { l:'Income in constant 2015 US$',     est:-0.177, lo:-0.410, hi:0.056, k:'main' },
-    { l:'Placebo: policy 3 years later',   est:-0.186, lo:-0.376, hi:0.005, k:'plac' },
-    { l:'Main + a trend per country',      est:0.040,  lo:-0.019, hi:0.099, k:'trend' },
-    { l:'Placebo + a trend per country',   est:0.009,  k:'trend' },
-  ];
-  const col = { main:C1, plac:FAINT, trend:C2 };
+const svg = d3.select('#coef'); if (svg.empty()) return;
+const rows = [
+{ l:'Policy in force, 3-year lag',        est:-0.209, lo:-0.623, hi:0.204, k:'main' },
+{ l:'Lag 2 years',                        est:-0.248, lo:-0.656, hi:0.160, k:'main' },
+{ l:'Lag 5 years',                        est:-0.156, lo:-0.569, hi:0.257, k:'main' },
+{ l:'Without South Sudan, Eritrea',       est:-0.214, lo:-0.629, hi:0.201, k:'main' },
+{ l:'Income in current US$',              est:-0.154, lo:-0.533, hi:0.226, k:'main' },
+{ l:'Lead test: policy 3 years later',    est:-0.342, lo:-0.655, hi:-0.029, k:'plac' },
+{ l:'Main + a trend per country',         est:-0.017, lo:-0.126, hi:0.091, k:'trend' },
+{ l:'Lead test + a trend per country',    est:-0.028, lo:-0.168, hi:0.112, k:'trend' },
+{ l:'First differences',                  est:-0.013, lo:-0.044, hi:0.018, k:'bracket' },
+{ l:'Lagged outcome, no country effects', est:-0.025, lo:-0.059, hi:0.009, k:'bracket' },
+{ l:'Main + malaria, fertility, urban',   est:-0.052, lo:-0.369, hi:0.265, k:'ctx' },
+{ l:'Survey-anchored years only',         est:-0.036, lo:-0.609, hi:0.537, k:'anchor' },
+];
+const col = { main:C1, plac:FAINT, trend:C2, bracket:C3, ctx:'#B07A10', anchor:'#A03A6E' };
   const W = 680, H = 400, mL = 250, mR = 60, mT = 18, mB = 42;
-  const x = d3.scaleLinear().domain([-0.45, 0.15]).range([mL, W-mR]);
+  const x = d3.scaleLinear().domain([-0.7, 0.6]).range([mL, W-mR]);
   const y = d3.scalePoint().domain(rows.map(d=>d.l)).range([mT+10, H-mB-10]);
   // gridlines + axis
-  [-0.4,-0.3,-0.2,-0.1,0,0.1].forEach(v => { svg.append('line').attr('x1',x(v)).attr('x2',x(v)).attr('y1',mT).attr('y2',H-mB).attr('stroke', v===0?LINE2:LINE).attr('stroke-width', v===0?2:1);
+  [-0.6,-0.4,-0.2,0,0.2,0.4,0.6].forEach(v => { svg.append('line').attr('x1',x(v)).attr('x2',x(v)).attr('y1',mT).attr('y2',H-mB).attr('stroke', v===0?LINE2:LINE).attr('stroke-width', v===0?2:1);
     svg.append('text').attr('x',x(v)).attr('y',H-mB+20).attr('text-anchor','middle').attr('fill',SOFT).attr('font-size',12).attr('font-family','Inter').text(v===0?'0':d3.format('+.1f')(v)); });
-  svg.append('text').attr('x',(x(-0.45)+x(0.15))/2).attr('y',H-4).attr('text-anchor','middle').attr('fill',FAINT).attr('font-size',12).attr('font-family','Inter').text('percentage points of anaemia per unit of policy stock');
+  svg.append('text').attr('x',(x(-0.7)+x(0.6))/2).attr('y',H-4).attr('text-anchor','middle').attr('fill',FAINT).attr('font-size',12).attr('font-family','Inter').text('percentage points of anaemia per anaemia policy in force');
   // separators
-  [4.5, 5.5].forEach(i => svg.append('line').attr('x1',20).attr('x2',W-mR).attr('y1',(y(rows[Math.floor(i)].l)+y(rows[Math.ceil(i)].l))/2).attr('y2',(y(rows[Math.floor(i)].l)+y(rows[Math.ceil(i)].l))/2).attr('stroke',LINE).attr('stroke-dasharray','3 4'));
+  [4.5, 5.5, 7.5, 9.5, 10.5].forEach(i => svg.append('line').attr('x1',20).attr('x2',W-mR).attr('y1',(y(rows[Math.floor(i)].l)+y(rows[Math.ceil(i)].l))/2).attr('y2',(y(rows[Math.floor(i)].l)+y(rows[Math.ceil(i)].l))/2).attr('stroke',LINE).attr('stroke-dasharray','3 4'));
   const g = svg.append('g');
   rows.forEach((d,i) => {
     const yy = y(d.l), c = col[d.k];
@@ -836,25 +848,25 @@ ScrollTrigger.create({ trigger:'main', start:'top top', end:'bottom bottom', onU
   });
 })();
 
-/* ---------- level ranking (real v1.1 numbers) ---------- */
+/* ---------- context ranking (scaffold v2.0: anaemia minus the level predicted by income, malaria, fertility, urbanisation, sanitation, sub-region and terrain; mean 2015–2023) ---------- */
 (() => {
-  const svg = d3.select('#rank'); if (svg.empty()) return;
-  const data = [
-    ['Rwanda',-23.6,15],['Ethiopia',-17.9,20],['Namibia',-14.4,22],['Uganda',-12.9,26],['Zimbabwe',-11.6,26],['Zambia',-11.4,26],['Eswatini',-10.8,26],['Seychelles',-10.5,24],
-    ['Chad',8.3,46],['Gambia',9.7,48],['Congo',10.9,48],['Benin',11.3,49],["Côte d'Ivoire",13.1,50],['Mauritania',15.7,53],['Mali',16.4,55],['Gabon',24.2,60],
-  ].map(d => ({ c:d[0], r:d[1], lvl:d[2] }));
-  const W = 680, H = 470, mL = 130, mR = 90, mT = 14, mB = 40;
-  const x = d3.scaleLinear().domain([-34, 30]).range([mL, W-mR]);
+const svg = d3.select('#rank'); if (svg.empty()) return;
+const data = [
+['Nigeria',-9.6,40],['Namibia',-9.0,22],['Cameroon',-9.0,38],['Ghana',-6.7,37],['Liberia',-6.4,41],['DR Congo',-6.1,40],['Ethiopia',-4.6,21],['Zambia',-4.5,26],
+['Comoros',4.4,28],['Eswatini',4.4,25],['Madagascar',5.7,35],['Tanzania',6.4,38],['Mali',7.3,55],['Gabon',8.0,59],['Burundi',8.2,34],['Mozambique',11.2,46],
+].map(d => ({ c:d[0], r:d[1], lvl:d[2] }));
+const W = 680, H = 470, mL = 130, mR = 90, mT = 14, mB = 40;
+  const x = d3.scaleLinear().domain([-14, 14]).range([mL, W-mR]);
   const y = d3.scaleBand().domain(data.map(d=>d.c)).range([mT, H-mB]).padding(.28);
-  [-20,-10,0,10,20].forEach(v => { svg.append('line').attr('x1',x(v)).attr('x2',x(v)).attr('y1',mT).attr('y2',H-mB).attr('stroke', v===0?LINE2:LINE).attr('stroke-width', v===0?2:1);
+  [-10,-5,0,5,10].forEach(v => { svg.append('line').attr('x1',x(v)).attr('x2',x(v)).attr('y1',mT).attr('y2',H-mB).attr('stroke', v===0?LINE2:LINE).attr('stroke-width', v===0?2:1);
     svg.append('text').attr('x',x(v)).attr('y',H-mB+20).attr('text-anchor','middle').attr('fill',SOFT).attr('font-size',12).attr('font-family','Inter').text(v===0?'0':d3.format('+d')(v)); });
-  svg.append('text').attr('x',(x(-34)+x(30))/2).attr('y',H-4).attr('text-anchor','middle').attr('fill',FAINT).attr('font-size',12).attr('font-family','Inter').text('percentage points from the income-predicted level');
+  svg.append('text').attr('x',(x(-14)+x(14))/2).attr('y',H-4).attr('text-anchor','middle').attr('fill',FAINT).attr('font-size',12).attr('font-family','Inter').text('percentage points from the context-predicted level');
   const bars = svg.append('g');
   data.forEach((d,i) => {
     const yy = y(d.c), h = y.bandwidth(), c = d.r < 0 ? C3 : C1;
     svg.append('text').attr('x',mL-10).attr('y',yy+h/2+4).attr('text-anchor','end').attr('fill',INK).attr('font-size',13).attr('font-weight',500).attr('font-family','Inter').text(d.c);
     bars.append('rect').attr('class','bar-svg').attr('x',x(0)).attr('y',yy).attr('width',0).attr('height',h).attr('rx',4).attr('fill',c).datum(d)
-      .append('title').text(`${d.c}: ${d3.format('+.1f')(d.r)} pp vs income-predicted · level ${d.lvl}%`);
+      .append('title').text(`${d.c}: ${d3.format('+.1f')(d.r)} pp vs context-predicted · level ${d.lvl}%`);
     const inside = Math.abs(x(d.r)-x(0)) > 96;           // long bar: label sits inside it in white
     bars.append('text').attr('class','bar-lbl').attr('y',yy+h/2+4)
       .attr('x', inside ? (d.r<0 ? x(d.r)+8 : x(d.r)-8) : (d.r<0 ? x(d.r)-8 : x(d.r)+8))
