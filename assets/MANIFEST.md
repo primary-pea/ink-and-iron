@@ -43,3 +43,7 @@ Palette reminder: cream #F2EEDF · oxide red #C0392B · sage #B7C7A8 · blush #E
 - LottieFiles "Outlined Globe" (Jan) was the top globe hit but is 1.2–1.6 MB; skipped for size in favour of Kele's 200 KB "Rotating Earth".
 - Storyset animated (Lottie) exports: the illustration pages expose static SVG/PNG without login; the animate/Lottie export goes through Storyset's editor and was not attempted.
 - lordicon: licence page is JS-rendered and its free tier is attribution-based; not needed once LottieFiles worked, so skipped.
+
+## Favicon (added 2026-09-13)
+
+`favicon.svg`, `favicon-32.png`, `apple-touch-icon.png`: an original pea-pod mark drawn for the deck in its own palette (sage pod, green peas, oxide stem); no third-party content, no attribution needed.
