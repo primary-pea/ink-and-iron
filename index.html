@@ -285,6 +285,9 @@ section > *{position:relative; z-index:1}
 .toggle.on i{background:var(--c1)} .toggle.on i::after{left:16px}
 .dash-main{display:grid; grid-template-rows:auto 1fr; gap:14px}
 .dash-kpis{display:grid; grid-template-columns:repeat(4,1fr); gap:14px}
+.dashrec{margin:0; display:grid; gap:8px; align-content:start; justify-items:center}
+.dashrec video{display:block; width:min(100%, calc(58vh * 16 / 9)); aspect-ratio:16/9; object-fit:cover; background:var(--card); border:1px solid var(--line); border-radius:22px}
+.dashrec figcaption{font-size:13px; color:var(--ink-soft); line-height:1.5; text-align:center; max-width:80ch}
 .kpi{border:1px solid var(--line); border-radius:20px; padding:16px 18px; background:var(--card)}
 .kpi:nth-child(1){background:var(--blush)}
 .kpi .kl{font-size:11.5px; font-weight:600; letter-spacing:.05em; text-transform:uppercase; color:var(--ink-soft)}
@@ -655,7 +658,12 @@ section > *{position:relative; z-index:1}
         <div class="kpi anim"><div class="kl">Ruled out</div><div class="kv num" style="font-size:22px">≥ 0.60 pp<small>per policy ruled out, equivalence p = 0.03</small></div></div>
         <div class="kpi anim"><div class="kl">Beats baseline</div><div class="kv num">22 / 49<small>chance, p = 0.57</small></div></div>
       </div>
-      <div class="ph anim" data-ph="Screen recording · The Delivery Gap"><span class="ph-note">The dashboard, recorded: the registry filling in year by year on the map, documents and blood on one time axis, the scatter with no tilt, the ladder, the 336 specifications, the watchlist. Every number on it reads from the same hash-stamped results as the report.</span></div>
+      <figure class="dashrec anim">
+        <video id="dash-rec" muted loop playsinline controls preload="none" poster="assets/dashboard-tour-poster.jpg" aria-label="The Delivery Gap dashboard, recorded: the registry filling in year by year on the map, then documents and blood on one time axis, the scatter, the ladder, the watchlist and the 336 specifications">
+          <source src="assets/dashboard-tour.mp4" type="video/mp4">
+        </video>
+        <figcaption>The dashboard, recorded on data version afe63e46c26b. Every number on it reads from the same hash-stamped results as the report; the live page is <a href="https://primary-pea.github.io/dashboard/">primary-pea.github.io/dashboard</a>.</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -713,6 +721,15 @@ if (!reduced) {
       scrollTrigger:{ trigger:sec, start:'top 70%' } });
   });
 } else gsap.set('.anim', { opacity:1, y:0 });
+
+/* ---------- dashboard recording: fetch one slide ahead, play only while on screen ---------- */
+(() => {
+  const v = document.getElementById('dash-rec'); if (!v) return;
+  if (reduced) return;
+  const near = new IntersectionObserver(([e]) => { if (e.isIntersecting) { v.preload = 'auto'; near.disconnect(); } }, { rootMargin: '100% 0px' });
+  near.observe(v);
+  new IntersectionObserver(([e]) => { if (e.isIntersecting) { v.currentTime = 0; v.play().catch(() => {}); } else v.pause(); }, { threshold: .4 }).observe(v);
+})();
 
 /* counters: fire on any approach */
 document.querySelectorAll('[data-count]').forEach(el => {
